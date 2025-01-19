@@ -5,7 +5,7 @@ import { FaWhatsapp, FaTwitter, FaLinkedin, FaYoutube} from 'react-icons/fa';
 const ContactUs = () => {
   return (
     <div className="bg-gradient-to-b from-gray-900 to-black">
-        <div className="flex flex-row items-center justify-between">
+        <div className="flex flex-row items-center justify-center md:justify-between">
         <div className='flex flex-col w-full items-start backdrop-blur-sm p-8 transform transition-all duration-500'>
             <h1 className="text-4xl font-bold text-white mb-4">Contact Us</h1>
             <div className="">
@@ -53,7 +53,7 @@ const ContactUs = () => {
             </a>
             </div>
         </div>
-        <div className="w-full lg:w-1/2">
+         <div className="hidden md:block lg:w-1/2">
             <TiltedScroll />
           </div>
         </div>
