@@ -15,6 +15,21 @@ const TiltedScroll = () => {
     { id: "13", text: "Lead Generation & Conversion" },
     { id: "14", text: "No payment required if we don't deliver" },
     { id: "15", text: "50-150+ Monthly Appointments" },
+    { id: "16", text: "Client Success Stories" },
+    { id: "17", text: "Our Proven 3 Step Process" },
+    { id: "18", text: "Lead Generation & Conversion" },
+    { id: "19", text: "No payment required if we don't deliver" },
+    { id: "20", text: "50-150+ Monthly Appointments" },
+    { id: "21", text: "Client Success Stories" },
+    { id: "22", text: "Our Proven 3 Step Process" },
+    { id: "23", text: "Lead Generation & Conversion" },
+    { id: "24", text: "No payment required if we don't deliver" },
+    { id: "25" ,text: "50-150+ Monthly Appointments" },
+    { id: "26", text: "Client Success Stories" },
+    { id: "27", text: "Our Proven 3 Step Process" },
+    { id: "28", text: "Lead Generation & Conversion" },
+    { id: "29", text: "No payment required if we don't deliver" },
+    { id: "39", text: "50-150+ Monthly Appointments" },
     
   ];
   

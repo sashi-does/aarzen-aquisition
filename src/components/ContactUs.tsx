@@ -26,15 +26,10 @@ const ContactUs = () => {
           >
             <div className="relative mb-8">
               <div className="absolute -left-4 -top-4 w-24 h-24 bg-blue-500/10 rounded-full blur-2xl"></div>
-              <h2 className="w-fit text-4xl md:text-5xl font-[900] relative z-10">
-                <GradientText
-                  colors={["#60A5FA", "#FFFFFF","#60A5FA"]}
-                  animationSpeed={6}
-                  showBorder={false}
-                  className="font-[800]"
-                >
+              <h2 className="text-4xl md:text-5xl font-[700] text-start mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-400">
+
                   Get in Touch
-                </GradientText>
+
               </h2>
               <p className="text-gray-400 text-lg mt-4">
                 Ready to transform your business? Let's make it happen.
