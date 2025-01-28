@@ -1,4 +1,5 @@
 import React from 'react';
+import GradientText from './GradientText';
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
 
@@ -36,7 +37,19 @@ const ResultsGallery = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Real Results</h2>
+          <h2 className="text-4xl md:text-5xl font-[900] text-start mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-400">
+                        <GradientText
+                                colors={["#60A5FA", "#FFFFFF","#60A5FA"]}
+                                animationSpeed={6}
+                                showBorder={false}
+                                className="font-[800]"
+                                >
+                        
+                          Real Results
+                        </GradientText>
+                        
+                        
+                        </h2>
           <p className="text-xl text-gray-400">See what our clients are saying about their success</p>
         </motion.div>
 

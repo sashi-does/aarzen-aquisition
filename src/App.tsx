@@ -5,11 +5,9 @@ import Navbar from './components/Navbar';
 import ExplainerVideo from './components/ExplainerVideo';
 import ResultsGallery from './components/ResultsGallery';
 import ThreeStepProcess from './components/ThreeStepProcess';
-import CountUp from './components/Countup';
-import GradientText from './components/GradientText';
+
 import ContactUs from './components/ContactUs';
 import AboutUs from './components/AboutUs';
-
 
 function App() {
   return (
@@ -28,7 +26,7 @@ const HomePage = () => {
   return (
     <>
       {/* Hero Section */}
-      <header className="relative h-screen flex items-center justify-center overflow-hidden">
+      <header id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
             src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80"
@@ -39,13 +37,12 @@ const HomePage = () => {
         </div>
         
         <div className="relative container mx-auto px-6 text-center">
-        
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-5xl md:text-7xl font-bold mb-6"
           >
-           Scale <span className="text-6xl md:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">Smarter</span> <br /> Not <span className='text-6xl md:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600'>Harder</span>
+            Scale <span className="text-6xl md:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">Smarter</span> <br /> Not <span className='text-6xl md:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600'>Harder</span>
           </motion.h1>
          
           <motion.p 
@@ -82,18 +79,29 @@ const HomePage = () => {
       </header>
 
       {/* Video Section */}
-      <ExplainerVideo />
+      <section id="process">
+        <ExplainerVideo />
+      </section>
 
-      {/* Case Studies Section */}
-      <ThreeStepProcess />
+      {/* Process Section */}
+      <section>
+        <ThreeStepProcess />
+      </section>
 
-      <AboutUs />
-
+      {/* About Section */}
+      <section id="about">
+        <AboutUs />
+      </section>
 
       {/* Results Gallery Section */}
-      <ResultsGallery />
+      <section>
+        <ResultsGallery />
+      </section>
 
-      <ContactUs />
+      {/* Contact Section */}
+      <section id="contact">
+        <ContactUs />
+      </section>
     </>
   );
 };

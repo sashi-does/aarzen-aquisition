@@ -18,16 +18,8 @@ const AboutUs: React.FC = () => {
           <div className="md:w-1/2">
             <div className="relative">
               <Sparkles className="absolute -left-6 -top-6 w-12 h-12 text-gray-500/30 animate-pulse" />
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-400">
-              <GradientText
-                      colors={["#60A5FA", "#FFFFFF","#60A5FA"]}
-                      animationSpeed={6}
-                      showBorder={false}
-                      className="custom-class font-[800]"
-                      >
-              
-                A short story <br /> about us
-              </GradientText>
+              <h2 className="text-4xl md:text-5xl font-[700] text-start mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-400">
+              A short story about us
               </h2>
               <p className="text-gray-400 text-lg leading-relaxed max-w-xl">
                 We're not just another agency – we're your partner in growth. 
