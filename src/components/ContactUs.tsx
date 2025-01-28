@@ -1,4 +1,4 @@
-import { Mail } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 import { FaWhatsapp, FaTwitter, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import GradientText from './GradientText';
 import TiltedScroll from "./TiltedScroll";
@@ -41,41 +41,14 @@ const ContactUs = () => {
               </p>
             </div>
 
-            <div className="space-y-4">
-              <motion.a 
-                href="mailto:ritamsamanta@aarzenacquisition.com"
-                className="group flex items-center gap-4 p-4 bg-gray-900/30 rounded-xl border border-gray-800/50 
-                         hover:border-gray-700 hover:bg-gray-800/50 transition-all duration-300"
-                whileHover={{ x: 10 }}
-              >
-                <div className="p-2 rounded-lg bg-black/30 border border-gray-700">
-                  <Mail className="h-5 w-5 text-blue-400" />
-                </div>
-                <span className="text-gray-300 group-hover:text-white transition-colors">
-                  ritamsamanta@aarzenacquisition.com
-                </span>
-              </motion.a>
-
-              <motion.a 
-                href="https://wa.me/1234567890"
-                className="group flex items-center gap-4 p-4 bg-gray-900/30 rounded-xl border border-gray-800/50 
-                         hover:border-gray-700 hover:bg-gray-800/50 transition-all duration-300"
-                whileHover={{ x: 10 }}
-              >
-                <div className="p-2 rounded-lg bg-black/30 border border-gray-700">
-                  <FaWhatsapp className="h-5 w-5 text-green-400" />
-                </div>
-                <span className="text-gray-300 group-hover:text-white transition-colors">
-                  91+ 96744 94784
-                </span>
-              </motion.a>
-            </div>
-
-            <div className="flex items-center gap-4 pt-6">
+            <div className="flex flex-wrap items-center gap-4 pt-6">
               {[
                 { icon: FaTwitter, color: "text-blue-400", href: "https://x.com/theritamsamanta" },
                 { icon: FaYoutube, color: "text-red-400", href: "https://www.youtube.com/@theritamsamanta" },
-                { icon: FaLinkedin, color: "text-blue-500", href: "https://www.linkedin.com/company/aarzen-acquisition/" }
+                { icon: FaLinkedin, color: "text-blue-500", href: "https://www.linkedin.com/company/aarzen-acquisition/" },
+                { icon: FaWhatsapp, color: "text-green-400", href: "https://wa.me/919674494784" },
+                { icon: Phone, color: "text-yellow-400", href: "tel:+919674494784" },
+                { icon: Mail, color: "text-blue-400", href: "mailto:ritamsamanta@aarzenacquisition.com" }
               ].map((social, index) => (
                 <motion.a
                   key={index}
